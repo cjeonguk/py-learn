@@ -1,11 +1,12 @@
-a = 12
-b = "Hello"
-c = 3.14
-d = True
+name = "bob"
 
-e = f = g = 10
-
-print(a, b, c, d)
-print(type(a), type(b), type(c), type(d))
-print("This is a string: " + str(a))
-print(e, f, g)
+print(len(name))
+print(name.find("b"))
+print(name.capitalize()) # Capitalize the first letter
+print(name.upper())
+print(name.lower()) 
+print(name.isdigit()) # Check if all characters are digits
+print(name.isalpha()) # Check if all characters are alphabetic
+print(name.count("b"))
+print(name.replace("b", "l"))
+print(name*3)

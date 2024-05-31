@@ -1,16 +1,9 @@
-import math
+name = "John Doe"
+first_name = name[:4]
+last_name = name[5:]
+funky_name = name[::2]
+reverse_name = name[::-1]
+slice_var = slice(4)
+slice_var2 = slice(0, -4)
 
-pi = math.pi
-x = 1
-y = 2
-z = 3
-
-print(pi)
-print(round(pi)) # round
-print(math.ceil(pi)) # round up
-print(math.floor(pi)) # round down
-print(abs(-pi)) # absolute value
-print(pow(pi, 2)) # power
-print(math.sqrt(pi)) # square root
-print(max(x, y, z))
-print(min(x, y, z))
+print(name, first_name, last_name, funky_name, reverse_name, name[slice_var], name[slice_var2])

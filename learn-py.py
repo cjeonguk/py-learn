@@ -1,9 +1,10 @@
-name = "John Doe"
-first_name = name[:4]
-last_name = name[5:]
-funky_name = name[::2]
-reverse_name = name[::-1]
-slice_var = slice(4)
-slice_var2 = slice(0, -4)
+choice = "paper"
 
-print(name, first_name, last_name, funky_name, reverse_name, name[slice_var], name[slice_var2])
+if choice == "rock":
+    print("You chose rock.")
+elif choice == "paper":
+    print("You chose paper.")
+elif choice == "scissors":
+    print("You chose scissors.")
+else:
+    print("Invalid choice.")

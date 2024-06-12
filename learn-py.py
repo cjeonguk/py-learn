@@ -1,8 +1,16 @@
-for i in range(10, 0, -1):
-    if i == 5:
-        continue
-    if i == 5 or i == 3:
-        print(i)
-        break
-    if i == 7:
-        pass
+company = ['Google', 'Facebook', 'Amazon', 'Microsoft', 'Apple']
+print(company)
+
+company.append('IBM')
+company.remove('Amazon')
+company.pop(2)
+
+company.insert(2, 'Amazon')
+
+company.sort()
+
+# company.clear()
+
+
+for i in company:
+    print(i)

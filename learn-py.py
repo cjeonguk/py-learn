@@ -1,5 +1,10 @@
-company = ['Google', 'Facebook', 'Amazon', 'Microsoft', 'Apple']
+company = ('Google', 'Facebook', 'Amazon', 'Microsoft', 'Apple')
 
-l = [company, [1, 2, 3, 4, 5]]
+for x in company:
+    print(x)
 
-print(l[0][1])  # Facebook
+print(company.count('Google'))
+print(company.index('Amazon'))
+
+if 'Google' in company:
+    print('Google is present in the company list')

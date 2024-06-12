@@ -1,10 +1,14 @@
-company = ('Google', 'Facebook', 'Amazon', 'Microsoft', 'Apple')
+s = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j"}
+s2 = {"k", "l", "m", "n", "o", "p", "q", "r", "s", "t"}
 
-for x in company:
-    print(x)
+# s.add("k")
+# s.remove("a")
+# s.clear()
+# s.update(s2)
+s3 = s.union(s2)
 
-print(company.count('Google'))
-print(company.index('Amazon'))
+# print(s)
+print(s3)
 
-if 'Google' in company:
-    print('Google is present in the company list')
+print(s3.difference(s2))
+print(s3.intersection(s2))

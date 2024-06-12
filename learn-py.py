@@ -1,4 +1,4 @@
-def func(*args):
-    print(args)
+def func(**kwargs):
+    print(kwargs)
 
-func(1, 2, 3)
+func(a = 1, b = 2, c = 3)

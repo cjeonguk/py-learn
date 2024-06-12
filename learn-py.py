@@ -1,5 +1,4 @@
-a = "start"
+for i in range(10, 0, -1):
+    print(i)
 
-while a != "exit":
-    a = input("Enter a command: ")
-    print("You entered", a)
+print("Done!")

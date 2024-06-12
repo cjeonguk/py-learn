@@ -1,14 +1,15 @@
-s = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j"}
-s2 = {"k", "l", "m", "n", "o", "p", "q", "r", "s", "t"}
+d = {"a": 1, "b": 2, "c": 3}
 
-# s.add("k")
-# s.remove("a")
-# s.clear()
-# s.update(s2)
-s3 = s.union(s2)
+print(d.get("a"))
 
-# print(s)
-print(s3)
+print(d.keys())
 
-print(s3.difference(s2))
-print(s3.intersection(s2))
+print(d.values())
+
+print(d.items())
+
+d.update({"d": 4})
+d.update({"a": 5})
+
+for key, value in d.items():
+    print(key, value)

@@ -1,3 +1,4 @@
-import shutil
+import os
 
-shutil.copyfile('demofile.txt', 'copy.txt')
+if not os.path.exists('demomove.txt'):
+    os.replace('demofile.txt', 'demomove.txt')

@@ -1,5 +1,7 @@
-def func(name):
+def func(name = "default"):
     print(f"Hello from a {name}")
+    return f"Hi {name}"
 
 
-func("function")
+print(func("function"))
+print(func())

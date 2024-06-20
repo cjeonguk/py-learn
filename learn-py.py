@@ -8,4 +8,5 @@ mod.Human.is_alive = False
 
 print(mod.Student('Charlie').is_alive)
 
-mod.Student('David').say_hello()
+mod.Student('David').say_hello()\
+                    .study()

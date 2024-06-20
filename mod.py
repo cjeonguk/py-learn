@@ -11,3 +11,8 @@ class Human:
 class Student(Human):
     def say_hello(self):
         print(f'Hello, my name is {self.name} and I am a student')
+        return self
+    
+    def study(self):
+        print(f'{self.name} is studying')
+        return self

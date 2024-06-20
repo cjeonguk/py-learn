@@ -5,6 +5,8 @@ store = [
     ("socks", 10.00)
 ]
 
-filtered = list(filter(lambda data: data[1] >= 20, store))
+import functools
 
-print(filtered)
+reduced = functools.reduce(lambda acc, item: acc + (item[1] if item[1] > 20 else 0), store, 0)
+
+print(reduced)

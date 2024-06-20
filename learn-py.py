@@ -1,5 +1,3 @@
 import mod
 
-mod.func1()
-
-mod.func2(10)
+mod.Human('Alice').say_hello()

@@ -1,6 +1,6 @@
-def func1():
-    print("func1")
+class Human:
+    def __init__(self, name):
+        self.name = name
 
-
-def func2(num):
-    print("func2: " + str(num))
+    def say_hello(self):
+        print(f'Hello, my name is {self.name}')

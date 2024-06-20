@@ -22,3 +22,6 @@ class Student(Human):
     def study(self):
         print(f'{self.name} ({self.grade}) is studying')
         return self
+    
+def rename(human, name):
+    human.name = name

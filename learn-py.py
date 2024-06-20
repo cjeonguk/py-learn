@@ -1,19 +1,4 @@
-def a(a, b):
-    a(b)
+add = lambda x, y: x + y
+multiply = lambda x, y: x * y
 
-a(print, "c")
-
-d = print
-
-d("e")
-
-def devisor(x):
-    def inner(y):
-        return x / y
-    return inner
-
-devide = devisor(10)(5)
-
-devide2 = devisor(10)
-
-print(devide, devide2(5))
+print(multiply(add(2, 3), 5))

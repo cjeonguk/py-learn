@@ -1,11 +1,10 @@
-store = [
-    ("shirt", 20.00),
-    ("pants", 25.00),
-    ("jacket", 50.00),
-    ("socks", 10.00)
-]
+fine_dust = {
+    '서울': 72,
+    '대전': 82,
+    '구미': 29,
+    '광주': 45,
+}
 
-# l = [i[0] for i in store if i[1] >= 20.00]
-l = [i[0] if i[1] >= 20.00 else "--" for i in store]
+bad_dust = {city: dust for city, dust in fine_dust.items() if dust > 70}
 
-print(l)
+print(bad_dust)

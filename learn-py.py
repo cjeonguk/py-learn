@@ -5,8 +5,7 @@ store = [
     ("socks", 10.00)
 ]
 
-import functools
+# l = [i[0] for i in store if i[1] >= 20.00]
+l = [i[0] if i[1] >= 20.00 else "--" for i in store]
 
-reduced = functools.reduce(lambda acc, item: acc + (item[1] if item[1] > 20 else 0), store, 0)
-
-print(reduced)
+print(l)

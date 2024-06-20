@@ -9,4 +9,5 @@ class Human:
 
 
 class Student(Human):
-    pass
+    def say_hello(self):
+        print(f'Hello, my name is {self.name} and I am a student')

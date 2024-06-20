@@ -1,11 +1,16 @@
-names = ['Alice', 'Bob', 'Charlie']
+import time
 
-ages = [24, 50, 18]
+print(time.ctime(time.time()))
 
-is_adult = [True, True, False]
+time_obj = time.localtime()
+# time_obj = time.gmtime()
 
+print(time_obj)
+print(time.strftime('%Y-%m-%d %H:%M:%S', time_obj))
 
-# profiles = zip(names, ages, is_adult)
-profiles = dict(zip(names, zip(ages, is_adult)))
+time_1 = "January 1, 1970"
 
-print(profiles)
+print(time.strptime(time_1, '%B %d, %Y'))
+
+print(time.asctime(time_tuple := (2020, 1, 1, 0, 0, 0, 0, 0, 0)))
+print(time.mktime(time_tuple))

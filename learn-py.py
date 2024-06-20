@@ -1,10 +1,11 @@
-fine_dust = {
-    '서울': 72,
-    '대전': 82,
-    '구미': 29,
-    '광주': 45,
-}
+names = ['Alice', 'Bob', 'Charlie']
 
-bad_dust = {city: dust for city, dust in fine_dust.items() if dust > 70}
+ages = [24, 50, 18]
 
-print(bad_dust)
+is_adult = [True, True, False]
+
+
+# profiles = zip(names, ages, is_adult)
+profiles = dict(zip(names, zip(ages, is_adult)))
+
+print(profiles)

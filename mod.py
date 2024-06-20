@@ -1,12 +1,14 @@
-class Human:
+from abc import ABC, abstractmethod
+
+class Human(ABC):
     def __init__(self, name):
         self.name = name
 
     is_alive = True
 
+    @abstractmethod
     def say_hello(self):
-        print(f'Hello, my name is {self.name}')
-
+        pass
 
 class Student(Human):
     def __init__(self, name, grade):

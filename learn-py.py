@@ -1,8 +1,8 @@
 import mod
 
-mod.Human('Alice').say_hello()
+# mod.Human('Alice').say_hello()
 
-print(mod.Human('Bob').is_alive)
+# print(mod.Human('Bob').is_alive)
 
 mod.Human.is_alive = False
 

@@ -6,3 +6,7 @@ class Human:
 
     def say_hello(self):
         print(f'Hello, my name is {self.name}')
+
+
+class Student(Human):
+    pass

@@ -6,4 +6,4 @@ print(mod.Human('Bob').is_alive)
 
 mod.Human.is_alive = False
 
-print(mod.Human('Charlie').is_alive)
+print(mod.Student('Charlie').is_alive)

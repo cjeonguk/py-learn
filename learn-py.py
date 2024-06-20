@@ -1,4 +1,5 @@
-import os
+import mod
 
-if os.path.exists('demomove.txt'):
-    os.remove('demomove.txt')
+mod.func1()
+
+mod.func2(10)

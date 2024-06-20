@@ -1,16 +1,37 @@
+import threading
 import time
 
-print(time.ctime(time.time()))
+def job1():
+    time.sleep(1)
+    print("Job1 finished")
 
-time_obj = time.localtime()
-# time_obj = time.gmtime()
+def job2():
+    time.sleep(2)
+    print("Job2 finished")
 
-print(time_obj)
-print(time.strftime('%Y-%m-%d %H:%M:%S', time_obj))
+def job3():
+    time.sleep(3)
+    print("Job3 finished")
 
-time_1 = "January 1, 1970"
+def job4(x):
+    time.sleep(x)
+    print("Job4 finished")
 
-print(time.strptime(time_1, '%B %d, %Y'))
+x = threading.Thread(target=job1, name='Job1')
+y = threading.Thread(target=job2, name='Job2')
+z = threading.Thread(target=job3, name='Job3')
+a = threading.Thread(target=job4, name='Job4', args=(1,))
 
-print(time.asctime(time_tuple := (2020, 1, 1, 0, 0, 0, 0, 0, 0)))
-print(time.mktime(time_tuple))
+x.start()
+y.start()
+z.start()
+a.start()
+
+x.join()
+y.join()
+z.join()
+# a.join()
+
+print(threading.active_count())
+print(threading.enumerate())
+print(time.perf_counter()) # time since the process started
